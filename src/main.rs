@@ -7,6 +7,6 @@ fn main() {
     // Cheap full solution for fun, we can just read a python script as a byte array and 
     // throw it in an exec
 
-    let bytes = std::fs::read("danger.py").unwrap();
+    let bytes = std::fs::read(std::env::args().last().unwrap()).unwrap();
     println!("exec({})", strings::charbychar(&bytes))
 }
