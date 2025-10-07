@@ -8,5 +8,9 @@ fn main() {
     // throw it in an exec
 
     let bytes = std::fs::read(std::env::args().last().unwrap()).unwrap();
-    println!("exec({})", strings::charbychar(&bytes))
+    println!("class JohnsSuperFunRev:pass");
+    println!("obj = JohnsSuperFunRev()");
+    println!("fun={}", strings::charbychar(&bytes));
+    println!("[+obj for obj.__class__.__pos__ in [\"\".__class__.__subclasses__]]");
+    println!("[obj[fun] for obj.__class__.__getitem__ in [exec]]");
 }
