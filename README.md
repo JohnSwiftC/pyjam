@@ -7,4 +7,4 @@ Im looking at you brainfudge.
 
 ## Usage
 
-pyjam somefile.py >> output.py
+pyjam somefile.py > output.py
