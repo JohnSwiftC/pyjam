@@ -1,7 +1,7 @@
-pub fn charbychar(input: &str) -> String {
+pub fn charbychar(input: &[u8]) -> String {
     let mut result = String::new();
 
-    for &c in input.as_bytes() {
+    for &c in input {
         let value = crate::numbers::bracketify(c as i32);
         result += &format!("chr({})+", value);
     }
